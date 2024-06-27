@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body class="mian">
+    <div class="mian">
+        <div class="sidebar">
+            <div class="top mt-5">
+                <i class="bx bx-menu" id="btn"></i>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="bx bxs-grid-alt"></i>
+                        <span class="nav-item">Dashboard</span>
+                    </a>
+                    <span class="tooltip">Dashboard</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-user"></i>
+                        <span class="nav-item">Profile</span>
+                    </a>
+                    <span class="tooltip">Profile</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-bar-chart-alt-2"></i>
+                        <span class="nav-item">Leaderboard</span>
+                    </a>
+                    <span class="tooltip">Leaderboard</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-cart-alt"></i>
+                        <span class="nav-item">Order</span>
+                    </a>
+                    <span class="tooltip">Order</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-shopping-bag"></i>
+                        <span class="nav-item">Product</span>
+                    </a>
+                    <span class="tooltip">Product</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-line-chart"></i>
+                        <span class="nav-item">Sales Report</span>
+                    </a>
+                    <span class="tooltip">Sales Report</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-message-rounded"></i>
+                        <span class="nav-item">Message</span>
+                    </a>
+                    <span class="tooltip">Message</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-cog"></i>
+                        <span class="nav-item">Settings</span>
+                    </a>
+                    <span class="tooltip">Settings</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-star"></i>
+                        <span class="nav-item">Favorite</span>
+                    </a>
+                    <span class="tooltip">Favorite</span>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="bx bx-log-out"></i>
+                        <span class="nav-item">Signout</span>
+                    </a>
+                    <span class="tooltip">Signout</span>
+                </li>
+            </ul>
+        </div>
+        <!-- x -->
+
+        <!-- navbar -->
+
+        <div class="main-content">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <div>
+                        <form class="d-flex" role="search">
+                            <input class="p-3 me-2 border-0 rounded-3" type="search" placeholder="Search here..." />
+                        </form>
+                    </div>
+                    <div class="use position-relative">
+                        <ul class="list-unstyled d-flex align-items-center my-auto gap-3">
+                            <li class="me-4">
+                                <h1 class="position-relative">
+                                    <i class="bx bx-bell mt-3" style="width: 20px; height: 20px"></i>
+                                    <span
+                                        class="position-absolute translate-middle p-2 bg-danger border-light rounded-circle"
+                                        style="left: 150%; top: 20px">
+                                    </span>
+                                </h1>
+                            </li>
+                            <li class="">
+                                <img src="Img/Profile.png" alt="" width="40" height="40"
+                                    class="img-fluid rounded-circle" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Group 1 -->
+            <div class="gp-1 position-relative mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 position-relative d-block">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="">Today's Sales</h2>
+                                    <h3 class="card-subtitle mb-2">Sales Summary</h3>
+                                    <div class="all-cards d-flex d-block gap-4 flex-fill">
+                                        <div class="card-pack">
+                                            <img src="Img/icon-1.svg" class="img-fluid" alt="" />
+                                            <h4 class="">$5k</h4>
+                                            <p class="">Total Sales</p>
+                                            <p class="txts" style="color: #feb95a">
+                                                +8% from yesterday
+                                            </p>
+                                        </div>
+                                        <div class="card-pack">
+                                            <img src="Img/icon-2.svg" class="img-fluid" alt="" />
+                                            <h4 class="">500</h4>
+                                            <p class="">Total Order</p>
+                                            <p class="txts" style="color: #a9dfd8">
+                                                +8% from yesterday
+                                            </p>
+                                        </div>
+                                        <div class="card-pack">
+                                            <img src="Img/icon-3.svg" class="img-fluid" alt="" />
+                                            <h4 class="">9</h4>
+                                            <p class="">Total Sales</p>
+                                            <p class="txts" style="color: #f2c8ed">
+                                                +2% from yesterday
+                                            </p>
+                                        </div>
+                                        <div class="card-pack d-lg-block">
+                                            <img src="Img/icon-4.svg" class="img-fluid" alt="" />
+                                            <h4 class="">12</h4>
+                                            <p class="">Total Sales</p>
+                                            <p class="txts" style="color: #20aef3">
+                                                +3% from yesterday
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- bars -->
+                        <div class="col-lg-4 position-relative">
+                            <div class="card border-0">
+                                <div class="card-body sales-2">
+                                    <h2>Level</h2>
+
+                                    <div class="chart-1 my-auto">
+                                        <img src="Img/Bars.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2 -->
+            <div class="gp-2 position-relative mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="">Top Products</h2>
+                                    <div class="table-responsive mt-4">
+                                        <table class="table table-dark">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Popularity</th>
+                                                    <th scope="col">Sales</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">01</th>
+                                                    <td>Home Decore Range</td>
+                                                    <td>
+                                                        <div class="progress bg- mt-2" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="46"
+                                                            aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-1" style="width: 80%">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-1">46%</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">02</th>
+                                                    <td>Disney Princess Dress</td>
+                                                    <td>
+                                                        <div class="progress mt-2" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="17"
+                                                            aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-2" style="width: 60%">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-2">17%</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">03</th>
+                                                    <td>Bathroom Essentials</td>
+                                                    <td>
+                                                        <div class="progress mt-2" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="19"
+                                                            aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-3" style="width: 50%">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-3">19%</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">04</th>
+                                                    <td>Apple Smartwatch</td>
+                                                    <td>
+                                                        <div class="progress mt-2" role="progressbar"
+                                                            aria-label="Example with label" aria-valuenow="29"
+                                                            aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar progress-bar-4" style="width: 40%">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-4">29%</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- bars -->
+                        <div class="col-lg-4 position-relative">
+                            <div class="card border-0">
+                                <div class="card-body sales-2">
+                                    <h3>Customer Fulfillment</h3>
+
+                                    <div class="chart-2 my-auto mt-5">
+                                        <img src="Img/Graph.svg" class="img-fluid w-100" alt="" />
+                                    </div>
+                                    <hr />
+                                    <div class="d-flex justify-content-center gap-5">
+                                        <div class="cf-1 position-relative">
+                                            <span class="position-absolute p-2 rounded-circle">
+                                            </span>
+                                            <p class="txt">Last Month</p>
+                                            <p>$4,087</p>
+                                        </div>
+                                        <div class="cf-2 position-relative">
+                                            <span class="position-absolute p-2 rounded-circle">
+                                            </span>
+
+                                            <p class="txt">This Month</p>
+                                            <p>$5,506</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3 -->
+            <div class="gp-3 position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body text-start">
+                                    <h2>Earnings</h2>
+                                    <h5>Total Expense</h5>
+                                    <h1 class="cash" style="color: #a9dfd8; font-weight: 600">
+                                        $6078.76
+                                    </h1>
+                                    <h5>Profile is 48% More than last Month</h5>
+
+                                    <div class="pie mt-5">
+                                        <img src="Img/Percentage meter.svg" class="img-fluid w-100" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-body position-relative text-start">
+                                    <div class="d-flex justify-content-between">
+                                        <h2>Visitor Insights</h2>
+                                        <div class="dy position-relative">
+                                            <span class="p-2 rounded-circle"> </span>
+                                            <h4>New Visitor</h4>
+                                        </div>
+                                    </div>
+                                    <div class="grap-1 mt-5">
+                                        <img src="Img/Graph-2.svg" class="img-fluid w-100" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://kit.fontawesome.com/43dce575eb.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="assets/js/chart.js"></script>
+
+<script src="assets/js/scripts.js"></script>

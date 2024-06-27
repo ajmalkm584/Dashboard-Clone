@@ -1,0 +1,366 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #171821;
+    border-right: 1px solid #2c2d33;
+
+    transition: all 0.5s ease;
+}
+
+body .mian{
+    background-color: #000;
+    height: 100%;
+}
+
+.sidebar.active~.main-content {
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
+.sidebar.active {
+    width: 250px;
+}
+
+.sidebar #btn {
+    position: absolute;
+    color: #a9dfd8;
+    top: 0.4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.sidebar.active #btn {
+    left: 90%;
+}
+
+.sidebar .top .logo {
+    color: #fff;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.sidebar.active .top .logo {
+    opacity: 1;
+}
+
+.top .logo i {
+    font-size: 2rem;
+    margin-right: 5px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.user p {
+    color: #fff;
+    opacity: 1;
+    margin-left: 1rem;
+}
+
+.sidebar p {
+    opacity: 0;
+}
+
+.sidebar.active p {
+    opacity: 1;
+}
+
+.sidebar ul {
+    padding-left: 1rem;
+}
+
+.sidebar ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    width: 90%;
+    margin: 0.7rem auto;
+    line-height: 50px;
+}
+
+.sidebar ul li a {
+    color: #87888c;
+    display: flex;
+    text-decoration: none;
+    border-radius: 0.8rem;
+}
+
+.sidebar ul li a:hover {
+    background-color: #a9dfd8;
+    color: #12171e;
+}
+
+.sidebar ul li a i {
+    min-width: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+}
+
+.sidebar .nav-item {
+    opacity: 0;
+}
+
+.sidebar.active .nav-item {
+    opacity: 1;
+}
+
+.main-content {
+    position: relative;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 88px);
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --bg-color-1-: #171821;
+    --bg-color-2-: #21222d;
+    --color-1: #fff;
+    --color-2: #e8e8e8;
+    --color-3: #feb95a;
+    --color-4: #a9dfd8;
+    --color-5: #f2c8ed;
+    --color-6: #20aef3;
+    --color-7: #20aef3;
+    --color-8: #2b2b36;
+    --color-9: #a0a0a0;
+    --color-10: #87888c;
+}
+
+body {
+    background: var(--bg-color-1-);
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    background: var(--bg-color-1-);
+}
+
+.navbar form input {
+    background: var(--bg-color-2-);
+    color: #d2d2d2;
+}
+
+/** ++++++++++ GROUP 1 CARDS ++++++++++++++++++++*/
+
+.gp-1 .card {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color-2-);
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.gp-1 .card .card-body h3 {
+    color: var(--color-9);
+}
+
+.gp-1 .card .card-body .card-pack {
+    background: var(--bg-color-1-);
+    width: 100%;
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.gp-1 .card .card-pack img {
+    width: 60px;
+    height: 60px;
+}
+
+.gp-1 .card .card-pack h4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-top: 20px;
+}
+
+.gp-1 .card .card-pack p {
+    color: var(--color-2);
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.gp-1 .card .card-body .all-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gp-1 .card-body .all-cards .card-pack {
+    flex: 1 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+
+.gp-1 .card .card-body .card-pack h4 {
+    margin: 1rem 0 0.5rem;
+}
+
+.gp-1 .card .card-body .card-pack p {
+    margin: 0.5rem 0;
+}
+
+/* gp-1 responsive */
+@media (max-width: 1200px) {
+    .card-pack {
+        flex: 1 1 calc(33.33% - 1rem);
+        /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-pack {
+        flex: 1 1 calc(50% - 1rem);
+        /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-pack {
+        flex: 1 1 100%;
+        /* 1 card per row */
+    }
+}
+
+/* gp-2 */
+.gp-2 .card {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color-2-);
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.gp-2 .card .card-body .txt {
+    color: var(--color-9);
+}
+
+.gp-2 .card .card-body .cf-1 span {
+    position: absolute;
+    display: flex;
+    background-color: var(--color-4);
+    top: 5px;
+    left: -25px;
+}
+
+.gp-2 .card .card-body .cf-2 span {
+    position: absolute;
+    display: flex;
+    background-color: var(--color-5);
+    top: 5px;
+    left: -25px;
+}
+
+.gp-2 .card .card-body .progress {
+    background-color: var(--color-8);
+    height: 8px;
+}
+
+.gp-2 .card .card-body .progress-bar-1 {
+    background-color: var(--color-3);
+}
+
+.gp-2 .card .card-body .btn-1 {
+    background-color: #feba5a32;
+    border: 2px solid var(--color-3);
+    color: var(--color-3);
+}
+
+.gp-2 .card .card-body .progress-bar-2 {
+    background-color: var(--color-4);
+}
+
+.gp-2 .card .card-body .btn-2 {
+    background-color: #a9dfd830;
+    border: 2px solid var(--color-4);
+    color: var(--color-4);
+}
+
+.gp-2 .card .card-body .progress-bar-3 {
+    background-color: var(--color-6);
+}
+
+.gp-2 .card .card-body .btn-3 {
+    background-color: #20adf33b;
+    border: 2px solid var(--color-6);
+    color: var(--color-6);
+}
+
+.gp-2 .card .card-body .progress-bar-4 {
+    background-color: var(--color-5);
+}
+
+.gp-2 .card .card-body .btn-4 {
+    background-color: #f2c8ed35;
+    border: 2px solid var(--color-5);
+    color: var(--color-5);
+}
+
+.gp-3 .card {
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color-2-);
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.gp-3 .card-body h5 {
+    color: var(--color-10);
+}
+
+.gp-3 .card .card-body h4 {
+    font-size: 18px;
+    padding: 20px 40px;
+    margin-left: 10px;
+    background-color: var(--bg-color-1-);
+    border-radius: 15px 15px;
+}
+
+.gp-3 .card .card-body .dy span {
+    position: absolute;
+    display: flex;
+    background-color: var(--color-3);
+    top: 20px;
+    left: 30px;
+}
